@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import Sidebar from './Sidebar';
 import Login from './Login';
@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Sidebar />
         <Routes>
-          <Route path="/rooms/:roomId" element={<Chat />} />
+          <Route exact="true" path="/rooms/:roomId" element={<Chat />} />
           {/* <Route  path="/">
           <Chat/>
           <Route/> */}
